@@ -81,7 +81,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Asking X-MEN for BG..Done')
+ await event.reply('Asking Akshi for BG..Done')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./LunaRobot/resources/1e0e5d446028d6e77385b4dd5d6e2254.jpg')
@@ -100,7 +100,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=15, stroke_fill="yellow")
     fname2 = "LogoByLivvy.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @MissLivvyBot, Join @RhythmOff")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @Miss_Akshi_bot, Join @phoenix_music_suport")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
