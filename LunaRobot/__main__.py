@@ -85,7 +85,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕️", url="t.me/Miss_Akshi_bot?startgroup=true"),
+            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕", url="t.me/Miss_Akshi_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="𝐇𝐨𝐰 𝐭𝐨 𝐒𝐭𝐚𝐫𝐭❓", callback_data="Howto_"),
@@ -99,10 +99,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", url="http://t.me/Miss_Akshi_bot?start=help"
+        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", callback_data="help_back"),
     ],
 ]
-
 
 HELP_STRINGS = """
 `Click Buttons Below to Know My Features and CMDs...`
