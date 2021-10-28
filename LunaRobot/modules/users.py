@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import LunaRobot.modules.sql.users_sql as sql
-from LunaRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from LunaRobot.modules.helper_funsc.chat_status import dev_plus, sudo_plus
-from LunaRobot.modules.sql.users_sql import get_all_users
+import ShasaBot.modules.sql.users_sql as sql
+from ShasaBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from ShasaBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from ShasaBot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
@@ -187,5 +187,5 @@ dispatcher.add_handler(BROADCAST_HANDLER)
 dispatcher.add_handler(CHATLIST_HANDLER)
 dispatcher.add_handler(CHAT_CHECKER_HANDLER, CHAT_GROUP)
 
-__mod_name__ = "B-Cast📣"
+__mod_name__ = "Users"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), BROADCAST_HANDLER, CHATLIST_HANDLER]
