@@ -1,7 +1,7 @@
 {
       "name": "Flicks-Robot",
       "description": "Telegram group management bot, Can help you to manage and maintain your group.",
-      "logo": "https://telegra.ph/file/3534d0e0caadfe67ed22d.jpg",
+      "logo": "https://telegra.ph/file/62a63db432e288e0b5b83.png",
       "keywords": [
          "telegram",
          "anime",
@@ -9,7 +9,7 @@
          "manager",
          "Luna-ex"
       ],   
-   "repository": "https://github.com/zeinzo/LunaRobot",
+   "repository": "https://github.com/toxic-demon26/Miss_Aksh",
    "addons": [
       {
          "options": {
