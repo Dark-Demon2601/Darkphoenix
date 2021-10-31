@@ -108,7 +108,7 @@ HELP_STRINGS = """
 `Click Buttons Below to Know My Features and CMDs...`
 """
 
-LIVVY_IMG = "https://telegra.ph/file/f8545165b34eea4a42ec6.jpg"
+
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @akshi_s_ashu1 \
@@ -216,9 +216,10 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_animation(
-                LIVVY_IMG,
-                caption=PM_START_TEXT.format(escape_markdown(first_name), OWNER_ID),
+            update.effective_message.reply_text(
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name)),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
