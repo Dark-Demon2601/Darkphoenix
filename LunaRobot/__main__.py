@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ╭──────────────
-**Hey**🤞 {}, I am ᴀᴋꜱʜɪ🥀🍃☘️
+**Hey**🤞 {}, I am ᴀᴋꜱʜɪ🥀🍃[☘️](https://telegra.ph/file/f8545165b34eea4a42ec6.jpg)
 **I am an Advanced Group Manager Bot, With Lots of Cool Features❤️.**
 
 `For More Information Use the Button Below or Send` /help 
