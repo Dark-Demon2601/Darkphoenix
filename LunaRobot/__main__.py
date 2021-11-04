@@ -85,7 +85,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕", url="t.me/Miss_Akshi_bot?startgroup=true"),
+            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕", url="t.me/Dark_phoenix_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="𝐇𝐨𝐰 𝐭𝐨 𝐒𝐭𝐚𝐫𝐭❓", callback_data="Howto_"),
@@ -99,7 +99,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", url="http://t.me/Miss_Akshi_bot?start=help"
+        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", url="http://t.me/Dark_phoenix_bot?start=help"
         ),
     ],
 ]
@@ -226,7 +226,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Hey🤞, I am ᴀᴋꜱʜɪ🥀🍃☘️.\n<b>Uptime:</b> <code>{}</code>".format(
+            "Hey🤞, I am dark🥀🍃☘️.\n<b>Uptime:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -688,7 +688,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ᴀᴋꜱʜɪ🥀🍃☘️ is Back on Fire🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Dark🥀🍃☘️ is Back on Fire🔥")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
