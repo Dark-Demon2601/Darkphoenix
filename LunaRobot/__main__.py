@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ╭──────────────
-**Hey**🤞 {}, I am ᴀᴋꜱʜɪ🥀🍃[☘️](https://telegra.ph/file/f8545165b34eea4a42ec6.jpg)
+**Hey**🤞 {}, I am 𝘋𝘈𝘙𝘒 𝘗𝘏𝘖𝘌𝘕𝘐𝘟🥀🍃[☘️](https://telegra.ph/file/7e04235b03d23c42fb752.jpg)
 **I am an Advanced Group Manager Bot, With Lots of Cool Features❤️.**
 
 `For More Information Use the Button Below or Send` /help 
@@ -88,14 +88,14 @@ buttons = [
             text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕", url="t.me/Dark_phoenix_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐨𝐰 𝐭𝐨 𝐒𝐭𝐚𝐫𝐭❓", callback_data="Howto_"),
+        InlineKeyboardButton(text="𝘭𝘰𝘨𝘴", url=f"https://t.me/Darkphoenix_logs"),
     ],
     [
         InlineKeyboardButton(
-            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/phoenix_music_new"
+            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/Darkphoenix_updates"
         ),
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/phoenix_music_suport"
+            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/darkphoenix_support"
         ),
     ],
     [
@@ -226,7 +226,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Hey🤞, I am dark🥀🍃☘️.\n<b>Uptime:</b> <code>{}</code>".format(
+            "Hey🤞, I am 𝘋𝘈𝘙𝘒 𝘗𝘏𝘖𝘌𝘕𝘐𝘟🥀🍃☘️.\n<b>Uptime:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -688,7 +688,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Dark🥀🍃☘️ is Back on Fire🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "𝘋𝘈𝘙𝘒 𝘗𝘏𝘖𝘌𝘕𝘐𝘟🥀🍃☘️ is Back on Fire🔥")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
