@@ -1,5 +1,5 @@
-# By @TroJanzHEX
-# Improved by TeamDaisyX
+# By @doreamon_music
+# Improved by Dark phoenix
 
 from pyrogram import filters
 from pyrogram.types import (
@@ -9,7 +9,7 @@ from pyrogram.types import (
     Message,
 )
 
-# By @TroJanzHEX
+# By @doreamon_music
 from LunaRobot.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
@@ -56,7 +56,7 @@ from LunaRobot.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from LunaRobot.pyrogramee.pyrogram import pbot as Client
+from LunaRobot.pyrogramee.pyrogram import Sophia as Client
 
 lel = 00000000
 # pylint:disable=import-error
@@ -64,7 +64,7 @@ lel = 00000000
 async def photo(client: Client, message: Message):
     try:
         if not message.reply_to_message.photo:
-            await client.send_message(message.chat.id, "Reply message /edit to photo")
+            await message.reply_text("Reply to an image Man 😌 ", quote=True)
             return
     except:
         return
@@ -76,40 +76,40 @@ async def photo(client: Client, message: Message):
     try:
         await client.send_message(
             chat_id=message.chat.id,
-            text="Choose the mode you need below!ㅤㅤㅤㅤ",
+            text="Select your required mode from below!ㅤㅤ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="BRIGHT", callback_data="bright"),
-                        InlineKeyboardButton(text="MIXED", callback_data="mix"),
-                        InlineKeyboardButton(text="B&W", callback_data="b|w"),
+                        InlineKeyboardButton(text="💡 Bright", callback_data="bright"),
+                        InlineKeyboardButton(text="🖼 Mixed", callback_data="mix"),
+                        InlineKeyboardButton(text="🔳 B&W", callback_data="b|w"),
                     ],
                     [
-                        InlineKeyboardButton(text="CIRCLE", callback_data="circle"),
-                        InlineKeyboardButton(text="BLUR", callback_data="blur"),
-                        InlineKeyboardButton(text="BORDER", callback_data="border"),
+                        InlineKeyboardButton(text="🟡 Circle", callback_data="circle"),
+                        InlineKeyboardButton(text="🩸 Blur", callback_data="blur"),
+                        InlineKeyboardButton(text="🌌 Border", callback_data="border"),
                     ],
                     [
-                        InlineKeyboardButton(text="STICKER", callback_data="stick"),
-                        InlineKeyboardButton(text="ROTATE", callback_data="rotate"),
+                        InlineKeyboardButton(text="🎉 Sticker", callback_data="stick"),
+                        InlineKeyboardButton(text="↩️ Rotate", callback_data="rotate"),
                         InlineKeyboardButton(
-                            text="CONTRAS", callback_data="contrast"
+                            text="🔦 CONTRAST", callback_data="contrast"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="SEPIA", callback_data="sepia"),
-                        InlineKeyboardButton(text="PENCIL", callback_data="pencil"),
-                        InlineKeyboardButton(text="CARTOON", callback_data="cartoon"),
+                        InlineKeyboardButton(text="🌇 Sepia", callback_data="sepia"),
+                        InlineKeyboardButton(text="✏️ Pencil", callback_data="pencil"),
+                        InlineKeyboardButton(text="🐶 Cartoon", callback_data="cartoon"),
                     ],
                     [
-                        InlineKeyboardButton(text="INVERT", callback_data="inverted"),
-                        InlineKeyboardButton(text="GLITCH", callback_data="glitch"),
+                        InlineKeyboardButton(text="🔄 Invert", callback_data="inverted"),
+                        InlineKeyboardButton(text="🔮 Glitch", callback_data="glitch"),
                         InlineKeyboardButton(
-                            text="REMOVE BG", callback_data="removebg"
+                            text="✂️ Remove BG", callback_data="removebg"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="❌", callback_data="close_e"),
+                        InlineKeyboardButton(text="❌ Close", callback_data="close_e"),
                     ],
                 ]
             ),
@@ -137,15 +137,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(
-                                text="WITH WHITE BG", callback_data="rmbgwhite"
+                                text="With White BG", callback_data="rmbgwhite"
                             ),
                             InlineKeyboardButton(
-                                text="WITHOUT BG", callback_data="rmbgplain"
+                                text="Without BG", callback_data="rmbgplain"
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="STICKER", callback_data="rmbgsticker"
+                                text="Sticker", callback_data="rmbgsticker"
                             )
                         ],
                     ]
@@ -274,10 +274,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(
-                                text="WITH BG", callback_data="circlewithbg"
+                                text="With BG", callback_data="circlewithbg"
                             ),
                             InlineKeyboardButton(
-                                text="WITHOUT BG", callback_data="circlewithoutbg"
+                                text="Without BG", callback_data="circlewithoutbg"
                             ),
                         ]
                     ]
@@ -450,11 +450,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "Editor📷"
+__mod_name__ = "Image Editor"
 __help__ = """
-<b> IMAGE EDITOR </b>
-Akshi have some advanced image editing tools inbuilt
+*Image Editor*
+Dark Phoenix have some advanced image editing tools inbuilt
 Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
-
 - /edit [reply to image]: Open the image editor
+- /rmbg [REPLY]: Revove BG of replied image or sticker.
+
+*Special credits to* @darkphoenix_support
 """
