@@ -85,21 +85,21 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="𝐀𝐝𝐝 𝐌𝐞 𝐍𝐨𝐰➕", url="t.me/Dark_phoenix_bot?startgroup=true"),
+            text="𝘈𝘥𝘥 𝘮𝘦 𝘯𝘰𝘸➕", url="t.me/Dark_phoenix_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="𝘭𝘰𝘨𝘴", url=f"https://t.me/Darkphoenix_logs"),
+        InlineKeyboardButton(text="𝘥𝘢𝘳𝘬 𝘱𝘩𝘰𝘦𝘯𝘪𝘹 𝘭𝘰𝘨𝘴❤️", url=f"https://t.me/Darkphoenix_logs"),
     ],
     [
         InlineKeyboardButton(
-            text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬🤞", url=f"https://t.me/Darkphoenix_updates"
+            text="𝘜𝘱𝘥𝘢𝘵𝘦𝘴🤞", url=f"https://t.me/Darkphoenix_updates"
         ),
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭😍", url=f"https://t.me/darkphoenix_support"
+            text="𝘚𝘶𝘱𝘱𝘰𝘳𝘵😍", url=f"https://t.me/darkphoenix_support"
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐞𝐥𝐩 𝐀𝐧𝐝 𝐂𝐌𝐃𝐬❓", url="http://t.me/Dark_phoenix_bot?start=help"
+        InlineKeyboardButton(text="𝘏𝘦𝘭𝘱 𝘢𝘯𝘥 𝘊𝘮𝘥𝘴❓", url="http://t.me/Dark_phoenix_bot?start=help"
         ),
     ],
 ]
